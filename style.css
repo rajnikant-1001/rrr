@@ -1,0 +1,198 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(243, 245, 236);
+    position: relative;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: #630336;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+.right-container{
+    background: linear-gradient(-45deg,#940379, #09c7dc 70%);
+    width: 30%;
+
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content h2 span{
+    color: #f2fdff;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content p{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.button-container button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+button:nth-child(1){
+    background: transparent;
+    background: #5db9ee;
+    color: #262525;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #18eded;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    
+    color: #1581d9;
+
+}
+button:nth-child(2):hover{
+    background: transparent;
+    background: #58bbec;
+    color: #0fa2ec;
+    color: #159eed;
+
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#f61717, #1052e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    
+    width: 30rem;
+    background-image: url("image.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .2rem solid white;
+    box-shadow: 
+    0 0 1rem #1c0278,
+    inset 0 0 1rem #fff,
+    0 0 2rem #fa0202,
+    inset 0 0 2rem #7e0170,
+    0 0 4rem #022674,
+    inset 0 0 4rem #032e3d;
+}
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.fa-instagram{
+    filter: drop-shadow(3px 3px 5px );
+
+}
+.fa-instagram:hover{
+    filter: drop-shadow(3px 3px 5px 10px );
+    transform: scale(2);
+    transition: 0.5s ease;
+}
+.fa-facebook{
+    filter: drop-shadow(3px 3px 5px );
+
+}
+.fa-facebook-f:hover{
+    filter: drop-shadow(3px 3px 5px 10px );
+    transform: scale(2);
+    transition: 0.5s ease;
+}
+.fa-telegram{
+    filter: drop-shadow(3px 3px 5px );
+
+}
+.fa-telegram:hover{
+    filter: drop-shadow(3px 3px 5px 10px );
+    transform: scale(2);
+    transition: 0.5s ease;
+}
+.fa-youtube{
+    filter: drop-shadow(3px 3px 5px );
+
+}
+.fa-youtube:hover{
+    filter: drop-shadow(3px 3px 5px 10px );
+    transform: scale(2);
+    transition: 0.5s ease;
+}
